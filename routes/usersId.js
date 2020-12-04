@@ -9,9 +9,10 @@ userIdRouter.get('/:id', (req, res) => {
       const users = JSON.parse(data);
       const usersId = users.find((item) => item._id === id);
       if (!usersId) {
-        res.status(404).json({message: 'Нет пользователя с таким id'});
+        return res.status(404).json({message: 'Нет пользователя с таким id'});
       }
       res.status(200).json(usersId);
+      return false;
     })
     .catch(() => {
       res.status(500).send({message: 'Ошибка при чтении файла'});
