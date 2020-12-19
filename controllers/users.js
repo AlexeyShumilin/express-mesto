@@ -59,6 +59,7 @@ function updateAvatar(req, res) {
     .catch(() => res.status(500).send({message: 'Server error'}));
 }
 
+
 module.exports = {
   getUsers,
   getUser,
