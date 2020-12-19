@@ -12,9 +12,9 @@ const cardSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator(v) {
-        return /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/.test(v);
+        return /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([\/\w .-]*)*\/?$/.test(v);
       },
-      message: 'URL incorrect',
+      message: 'Wrong URL'
     }
   },
   owner: {
@@ -29,8 +29,8 @@ const cardSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now,
-  }
-
+  },
+  versionKey: false,
 });
 
 module.exports = mongoose.model('card', cardSchema);

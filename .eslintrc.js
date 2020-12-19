@@ -1,12 +1,13 @@
 module.exports = {
   "extends": "airbnb-base",
   "rules": {
-    "no-underscore-dangle": [
-      {
-        "allow": [
-          "_id"
-        ]
-      }
-    ]
+    "no-underscore-dangle": ["error", {"allow": ["_id"]}],
+    "no-console": ["off"],
+    "no-useless-escape": ["off"],
+    "comma-dangle": ["error", "always-multiline"],
+    "comma-spacing": ["error", {"before": false, "after": true}],
+    "no-multiple-empty-lines": ["error", {"max": 2, "maxEOF": 0}],
+    "semi": ["error", "always"]
   }
+
 };

@@ -10,7 +10,7 @@ function getUser(req, res) {
   User.findById(req.params.id)
     .then((user) => {
       if (!user) {
-        return res.status(404).send({message: 'Id error: user not found'});
+        return res.status(404).send({message: 'User with id not found'});
       }
       return res.status(200).send(user);
     })
@@ -58,7 +58,6 @@ function updateAvatar(req, res) {
     })
     .catch(() => res.status(500).send({message: 'Server error'}));
 }
-
 
 module.exports = {
   getUsers,
