@@ -18,11 +18,11 @@ const userSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator(v) {
-        return /https?:\/\/(www)?[\-.~:\/?#\[\]@!$&'()*+,;=\w]+#?\b/gi.test(v);
+        return /https?:\/\/(www)?[-.~:/?#[\]@!$&'()*+,;=\w]+#?\b/gi.test(v);
       },
       message: 'Wrong URL',
-    }
-  }
+    },
+  },
 
 });
 
