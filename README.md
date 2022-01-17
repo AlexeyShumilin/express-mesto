@@ -24,16 +24,16 @@ updating the avatar and information about the user.
 `/routes` - folder with router files.  
   
 ## Routes
-GET /users - returns all users
-GET /users/:userId - returns user by _id
-POST /users - creates a user
+GET /users - returns all users  
+GET /users/:userId - returns user by _id  
+POST /users - creates a user  
 
-GET /cards - returns all cards
-POST /cards - creates a card
-DELETE /cards/:cardId - deletes a card by ID
+GET /cards - returns all cards  
+POST /cards - creates a card  
+DELETE /cards/:cardId - deletes a card by ID  
 
 
 ## Launch of the project
 
-`npm run start` - starts the server
-`npm run dev` - starts the server with hot-reload
+`npm run start` - starts the server  
+`npm run dev` - starts the server with hot-reload   
