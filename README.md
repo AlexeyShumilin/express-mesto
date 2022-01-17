@@ -2,20 +2,20 @@
 
 
 ## Stack
-React.js
-JavaScript (ES6)
-Node.js
-Express
-MongoDB
-Mongoose
-ESlint
+React.js  
+JavaScript (ES6)  
+Node.js  
+Express  
+MongoDB  
+Mongoose  
+ESlint  
 
 ## Functionality
-registration and authorization
-creating a new card
-like card
-deleting a card
-updating the avatar and information about the user.
+registration and authorization  
+creating a new card 
+like card 
+deleting a card 
+updating the avatar and information about the user  
 
 ## Directories
 
