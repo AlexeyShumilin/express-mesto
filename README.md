@@ -19,9 +19,9 @@ updating the avatar and information about the user.
 
 ## Directories
 
-`/public` - statics obtained as a result of building a front-end application in React
-`/data` - JSON files for temporary database emulation
-`/routes` - folder with router files
+`/public` - statics obtained as a result of building a front-end application in React. 
+`/data` - JSON files for temporary database emulation. 
+`/routes` - folder with router files. 
   
 ## Routes
 GET /users - returns all users
